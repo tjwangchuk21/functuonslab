@@ -1,0 +1,68 @@
+//tj wangchuk
+// functons lab
+//11/20/24
+#include <iostream>
+using namespace std;
+void countdown(){
+    for(int i=10;i>=1;--i){
+        cout<<i<<endl;
+    }
+    cout<<"lift off!!!!"<<endl;
+    
+}
+void customGreet(string name, int times){
+    for(int i = 0;i<times;++i){
+        cout<<"hello "<<name<<"!"<<endl;
+    }
+}
+int getFavoriteNumber(){
+    return 7;
+}
+double calculateAverage(int a,int b,int c){
+    return(a+b+c)/3.0;
+}
+int main()
+{
+    //excercise 1 
+    cout << "Exercise 1: Countdown" << endl;
+    countdown();
+    cout << endl;
+    //excercise 2
+    cout << "Exercise 2: Custom Greeting" << endl;
+    string name;
+    int times;
+    cout << "Enter your name: ";
+    cin >> name;
+    //excercise 3
+    cout << "Enter the number of greetings: ";
+    cin >> times;
+    customGreet(name, times);
+    cout << endl;
+    cout << "Exercise 3: Favorite Number" << endl;
+    int favNumber = getFavoriteNumber();
+    cout << "Your favorite number is: " << favNumber << endl;
+    cout << endl;
+    //excercise 4
+    cout << "Exercise 4: Calculate Average" << endl;
+    int num1, num2, num3;
+    cout << "Enter three integers: ";
+    cin >> num1 >> num2 >> num3;
+    double average = calculateAverage(num1, num2, num3);
+    cout << "The average is: " << average << endl;
+
+    return 0;
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+}
